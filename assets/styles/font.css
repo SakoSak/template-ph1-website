@@ -31,6 +31,9 @@ i, .icomoon-liga {
 .u-icon__link:before {
   content: "\e901";
 }
+.u-icon__link{
+  color: darkgray;
+}
 .u-icon__note:before {
   content: "\e902";
 }
@@ -48,3 +51,4 @@ i, .icomoon-liga {
 .u-icon__twitter:before {
   content: "\ea96";
 }
+

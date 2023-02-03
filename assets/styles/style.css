@@ -1,0 +1,116 @@
+body{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+ul{
+list-style-type: none;
+display: flex;
+
+}
+li{
+    text-align: right;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 60px;
+}
+.header-logo{
+    /* display: flex; */
+}
+.header-text{
+    display: flex;
+    height: 60px;
+}
+.header-nav-list{
+    margin-right: 60px;
+}
+.header-icon-twitter{
+    margin-right: 60px;
+}
+.header-icon-instagram{
+    margin-right: 60px;
+}
+.header-icon{
+    padding-left: 0;
+}
+a{
+    color: darkgray;
+    text-decoration: none;
+}
+.a-sns{
+    border-radius: 50%;
+    border: solid;
+}
+.box{
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    border-radius: 30px;
+    background-image: url(../img/bg-line.jpg);
+    width: 984px;
+    height: 357px;
+    margin:0 auto;
+    background-size: cover;
+    position: relative;
+}
+.box::before{
+    content: "";
+    background-color: rgba(59, 59, 180,0.8);
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+.box-inner{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.wrapper-LINE{
+    background-color: white;
+    border-radius: 35px;
+    width: 400px;
+    margin: 0 auto;
+}
+.inner-LINE{
+    display: flex;
+    text-align: center;
+}
+.inner-LINE-text{
+    color: black;
+    margin: 15px auto;
+}
+.inner-LINE-icon{
+    align-items: center;
+    display: flex;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-icon{
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.footer-wrapper-icon{
+    align-items: center;
+    display: flex;
+}
+.footer-text{
+    color: darkgray;
+}
+   
