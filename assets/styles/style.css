@@ -18,6 +18,7 @@ header{
 }
 .header-logo{
     /* display: flex; */
+    margin-left: 10px;
 }
 .header-text{
     display: flex;
@@ -42,6 +43,9 @@ a{
 .a-sns{
     border-radius: 50%;
     border: solid;
+}
+body{
+    margin: 0;
 }
 .box{
     color: white;
@@ -113,4 +117,130 @@ footer{
 .footer-text{
     color: darkgray;
 }
-   
+.main-text-under{
+    margin: 50px;
+    color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+.main-text-under::before{
+    display: inline-block;
+	content: "";
+	/* margin-top: 6px; */
+	/* margin-right: 7px; */
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #ccc;
+}
+.main-text{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    text-align: center;
+    height: 200px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+    z-index: 2;
+    padding: 50px 50px 50px 50px;
+}
+.main-text-title{
+    color: cornflowerblue;
+}
+.main-text-subtitle{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+.main-photo{
+    position: absolute; 
+    width: 975px;
+    height: 680px;
+    right: 0;
+    border-radius: 30px;
+}
+.main-wrapper{
+    position: relative;
+    height: 680px;
+    margin-bottom: 100px;
+}
+.main-about-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0 230px;
+    margin-top: 40px;
+}
+.main-about-text-photo{
+    width: 472px;
+    height: 312px;
+    border-radius: 30px;
+    text-align: center;
+}
+.main-about-text-content{
+    width: 472px;
+    height: 175px;
+    text-align: left;
+    margin-top: 50px;
+    line-height: 2;
+    margin-left: 20px;
+    font-size: 13px;
+}
+.main-about-title{
+    text-align: center;
+}
+.main-about-maintitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.main-about-subtitle{
+    color: dodgerblue;
+}
+.main-about{
+    margin-bottom: 150px;
+}
+.LINE{
+    background-color: chartreuse;
+    /* position: relative; */
+    width: 288px;
+    height: 80px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+.LINE-text{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    color: white;
+    margin: 0 0 -500px 0;
+    z-index: 6;
+    right: 30%;
+}
+.LINE-text-link{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    /* transform: translateY(-50%); */
+    color: white;
+}
+.LINE-icon{
+    /* position: absolute; */
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 40px;
+}
+.fixed{
+    /* position: absolute; */
+    right: 5%;
+}
+.fixed-wrapper{
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    position: fixed;
+}
