@@ -347,18 +347,60 @@ footer{
     /* left: 50%; */
     /* right: 50%; */
     /* top: 50%; */
-    padding-top: 22px;
-    padding-left: 5px;
-    border-width: 3px;
+    /* padding-top: 22px;
+    padding-left: 5px; */
+    border: none;
+    margin-bottom: 40px ;
     
 }
-.quiz-choice-common::after{
+.p-quiz-box__answer__button::after{
     position: absolute;
     width: 20px;
     right: 5px;
     content: url(../img/icon/icon-arrow.svg);
     /* margin-left: 210px; */
     padding-left: 210px;
+}
+.quiz-js{
+    background-color: pink;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 984px;
+    height: 143px;
+    position: relative;
+    display: none;
+}
+.quiz-js.is-correct {
+    display: block;
+  }
+.quiz-js.is-incorrect {
+    background-color: #eff2f5;
+    display: block;
+  }
+  
+.quiz-js-title{
+    color: orangered;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.quiz-js-answer{
+    display: flex;
+    padding-top: 0;
+}
+.quiz-js-wrapper{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.quiz-js-A{
+    padding-left: 20px;
+    font-size: 24px;
+    margin-top: 15px;
+}
+.quiz-js-content{
+    padding-left: 20px;
+    font-size: 18px;
 }
 .quiz-quote{
     display: flex;
@@ -373,3 +415,45 @@ footer{
     padding-top: 23px;
     padding-left: 25px;
 }
+.p-quiz-box__answer__button.is-selected {
+    background-color: #eff2f5;
+    border-color: #0071bc;
+  }
+  .is-correct .quiz-js-title {
+    color: #e34e70;
+  }
+  .is-incorrect .quiz-js-title {
+    color: #0071bc;
+  }
+  button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+  vertical-align: middle;
+  border: none;
+  
+}
+.p-quiz-box__answer__button {
+    align-items: center;
+    border: solid 4px #eee;
+    border-radius: 8px;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 16px;
+    text-align: left;
+    width: 100%;
+  }
